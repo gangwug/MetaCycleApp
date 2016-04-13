@@ -14,7 +14,7 @@ library(shiny)
 runGitHub("MetaCycleApp", "gangwug")
 
 # Or you can download 'ui.R' and 'server.R' from this page, and place these two files into an directory named 'MetaCycleApp'. 
-# Then set 'MetaCycleApp' as your working directory (see more introduction about [working directory](http://shiny.rstudio.com/tutorial/quiz/)). 
+# Then set 'MetaCycleApp' as your working directory (see more introduction about working directory-http://shiny.rstudio.com/tutorial/quiz/). 
 # Now you can launch this app in R with the below commands.
 runApp("MetaCycleApp")
 
