@@ -6,7 +6,7 @@ MetaCycle is an R package for evaluating periodicity in large scale time-series 
 ## Usage
 ```r
 # install 'shiny' package (if 'shiny' is not installed yet)
-install.package("shiny")
+install.packages("shiny")
 # load 'shiny' package
 library(shiny)
 
