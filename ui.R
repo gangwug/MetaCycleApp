@@ -67,7 +67,7 @@ shinyUI(fluidPage(
       helpText(h4('Step3: download') ),
       helpText(h5('The first six rows of analysis results will be shown as below (If the input file is large, please wait a while until you see the output results.):') ),
       tableOutput('tabout'),
-      helpText(h5('Now you could download the output results by clicking download button in the left.') )
+      helpText(h5('Now you could download the output results by clicking Download button in the left.') )
     )
   )
 ))
