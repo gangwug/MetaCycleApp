@@ -1,7 +1,7 @@
 This repository contains a web application for MetaCycle. 
 
 ## Introduction
-MetaCycle is an R package for evaluating periodicity in large scale time-series datasets. To see more information about MetaCycle, please visit its location in [CRAN](https://cran.r-project.org/web/packages/MetaCycle/index.html) or [GitHub](https://github.com/gangwug/MetaCycle). For easing the usage of MetaCycle, a corresponding web application is initiated by using [shiny](http://shiny.rstudio.com). Currently, a web application for the most frequently used **meta2d** function of MetaCycle has been prepared. 
+MetaCycle is an R package for evaluating periodicity in large scale time-series datasets. To see more information about MetaCycle, please visit its location in [CRAN](https://cran.r-project.org/web/packages/MetaCycle/index.html) or [GitHub](https://github.com/gangwug/MetaCycle). For facilitating using MetaCycle, a web application for its **meta2d** function has been prepared based on [shiny](http://shiny.rstudio.com) package. For successfully running this web application, R (≥ 3.0.2) is required. 
 
 ## Usage
 ```r
