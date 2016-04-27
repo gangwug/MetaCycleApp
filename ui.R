@@ -56,16 +56,16 @@ shinyUI(fluidPage(
     
     mainPanel(
       helpText(h4('Step1: upload') ),
-      helpText(h5('Please take a look at the input file selected in the left:') ),
+      helpText(h5('Please take a look at the input file selected on the left:') ),
       tableOutput('contents'),
       ##the temporaly output value for checking the value during running shiny app
       #textOutput('teptext'),
       br(),
       helpText(h4('Step2: run') ),
-      helpText(h5('If the input file is shown as expected, please set parameters in the left and click Run button.') ),
+      helpText(h5('If the input file is shown as expected, please set parameters on the left and click Run button.') ),
       br(),
       helpText(h4('Step3: download') ),
-      helpText(h5('The first six rows of analysis results will be shown as below (If the input file is large, please wait a while until you see the output results.):') ),
+      helpText(h5('The first six rows of analysis results will be shown as below (If the input file is large, please wait until you see the output results.):') ),
       tableOutput('tabout'),
       helpText(h5('Now you could download the output results by clicking Download button in the left.') )
     )
