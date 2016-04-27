@@ -5,6 +5,9 @@ if (!require(shiny)) {
 ##load 'MetaCycle' package
 if (!require(MetaCycle)) {
   install.packages("MetaCycle")
+  library(MetaCycle)
+}  else  {
+  library(MetaCycle)
 }
 ###set a flag for 'Run' button
 runflag <- 0
