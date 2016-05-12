@@ -23,14 +23,16 @@ shinyUI(fluidPage(
       ),
      fluidRow(
        column(6,
-              textInput("timept", label=h5("timepoints"), value="Line1") )
+              textInput("timept", label=h5("timepoints"), value="Header") )
      ),
      fluidRow(
-       column(2,
+       column(3,
               numericInput("minper", label=h5("minper"), value=20) ),
-       column(2,
-              numericInput("maxper", label=h5("maxper"), value=28) ),
-       column(2,
+       column(3,
+              numericInput("maxper", label=h5("maxper"), value=28) )
+     ),
+     fluidRow(
+       column(6,
               numericInput("arsper", label=h5("ARSdefaultPer"), value=24) )
      ),
      fluidRow(
@@ -67,8 +69,7 @@ shinyUI(fluidPage(
       helpText(h4('Step3: download') ),
       helpText(h5('The first six rows of analysis results will be shown as below (If the input file is large, please wait until you see the output results.):') ),
       tableOutput('tabout'),
-      helpText(h5('Now you could download the output results by clicking Download button in the left.') )
+      helpText(h5('Now you could download the output results by clicking Download button on the left.') )
     )
   )
 ))
-
