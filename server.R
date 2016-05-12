@@ -51,7 +51,7 @@ shinyServer(function(input, output) {
             outRawData <- FALSE
           }
           timepoints <- input$timept
-          if ( (timepoints == "Line1") | grepl(",", timepoints) ) 
+          if ( (timepoints == "Header") | grepl(",", timepoints) ) 
           {
               if (grepl(",", timepoints)) {
                 timepoints <- gsub("\\s+", "", timepoints, perl = TRUE)
@@ -59,6 +59,8 @@ shinyServer(function(input, output) {
                 timepoints <- sub(",$", "", timepoints, perl = TRUE)
                 timepoints <- unlist( strsplit(timepoints, ",", fixed=TRUE) )
                 timepoints <- as.numeric(timepoints)
+              }  else  {
+                timepoints <- "Line1"
               }
               outL <- meta2d(infile = inFile$datapath, filestyle = input$fstyle,
                              timepoints = timepoints, minper = input$minper,
