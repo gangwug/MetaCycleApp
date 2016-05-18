@@ -12,11 +12,11 @@ shinyUI(fluidPage(
                                   'text/comma-separated-values,text/plain', '.csv')) )
       ),
      fluidRow(
-       column(3,
+       column(6,
               radioButtons('fstyle', label=h5('fileStyle'),
                    choices=c("csv"='csv', "txt"='txt'),
                    selected='csv', inline=FALSE) ),
-       column(3,
+       column(6,
               radioButtons('outraw', label=h5('outRawData'),
                            choices=c("true"=TRUE, "false"=FALSE),
                            selected=TRUE, inline=FALSE) )
