@@ -26,11 +26,11 @@ shinyUI(fluidPage(
               textInput("timept", label=h5("timepoints"), value="Header") )
      ),
      fluidRow(
-       column(3,
+       column(6,
               numericInput("minper", label=h5("minper"), value=20) )
      ),
       fluidRow(
-       column(3,
+       column(6,
               numericInput("maxper", label=h5("maxper"), value=28) )
      ),
      fluidRow(
