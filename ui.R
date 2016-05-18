@@ -27,7 +27,9 @@ shinyUI(fluidPage(
      ),
      fluidRow(
        column(3,
-              numericInput("minper", label=h5("minper"), value=20) ),
+              numericInput("minper", label=h5("minper"), value=20) )
+     ),
+      fluidRow(
        column(3,
               numericInput("maxper", label=h5("maxper"), value=28) )
      ),
