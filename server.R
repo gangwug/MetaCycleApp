@@ -9,6 +9,11 @@ if (!require(MetaCycle)) {
 }  else  {
   library(MetaCycle)
 }
+
+### By default, the file size limit is 5MB. It can be changed by
+### setting this option. Here we'll raise limit to 100MB.
+options(shiny.maxRequestSize = 100*1024^2)
+
 ###set a flag for 'Run' button
 runflag <- 0
 ###uploading file
